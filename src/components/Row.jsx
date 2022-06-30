@@ -6,9 +6,11 @@ import Youtube from 'react-youtube'
 import Movie_Trailer from 'movie-trailer'
 import { motion } from 'framer-motion';
 import MyList from './pages/Search'
+import { useAlert } from 'react-alert'
 
 
 const Row = ({title,fetchUrl,isLargeRow,setProgress}) => {
+    const alert = useAlert()
     const [movies, setMovies] = useState([]);
     const [trailerUrl, setTrailerUrl] = useState("")
 
@@ -42,13 +44,13 @@ const showMovieTrailer = (movie)=>{
   }else{
     // https://www.youtube.com/watch?v=tSqqygm_JyA
     setProgress(30)
-    Movie_Trailer(`${movie?.original_title || movie?.title}` || "")
+    Movie_Trailer(`${movie?.original_title}` || "")
     .then((url)=>{
       const urlParam = new URLSearchParams(new URL(url).search); // this will gives us the y-t video id
       setProgress(70)
       setTrailerUrl(urlParam.get('v'));
       setProgress(100)
-    }).catch(err=>{console.log(err)})
+    }).catch(err=>{alert.show('Cant Chill, Soory No Trailer For This Movie/Series')})
 
   }
 

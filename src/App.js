@@ -57,7 +57,6 @@ function App() {
         <Route exact  path="/tvshow" element={<TVShow />} />
         <Route exact  path="/movies" element={<Movies />} />
         <Route exact  path="/new&popular" element={<NewPopular />} />
-        <Route exact  path="/new&popular" element={<NewPopular />} />
         <Route exact  path="/search" element={<Search />} />
         <Route exact  path="/all" element={<All />} />
 

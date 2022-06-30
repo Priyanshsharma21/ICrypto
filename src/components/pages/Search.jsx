@@ -107,7 +107,7 @@ const Search = () => {
               transition={{duration:0.5,type:'tween'}}
               onClick={()=>{
                 <All key={netflix.id} netflix={netflix}/>
-                navigate('/all')
+                navigate('/')
               }}
               src='https://th.bing.com/th/id/R.05c96bba4090acafe115aad47e66572d?rik=ejgwaTp6m0Dv6g&riu=http%3a%2f%2f1000logos.net%2fwp-content%2fuploads%2f2017%2f05%2fNetflix-Logo.png&ehk=gJbypm3nuRFxW%2fGn3WbaXOcTVq6kNgynGml%2fdXD79fM%3d&risl=&pid=ImgRaw&r=0' alt="" />
       
@@ -121,7 +121,7 @@ const Search = () => {
             transition={{duration:0.5,type:'tween'}}
             onClick={()=>{
             <All netflixMovie={prime}/> 
-            navigate('/all')}}
+            navigate('/tvshow')}}
             src="https://logodownload.org/wp-content/uploads/2018/07/prime-video-logo-0.png" alt="" />
       
         </div>
@@ -133,7 +133,7 @@ const Search = () => {
               whileTap={{ scale: 0.9 }}
               onClick={()=>{
               <All netflixMovie={hulu}/>
-              navigate('/all')
+              navigate('/new&popular')
               }}
               transition={{duration:0.5,type:'tween'}}
               src="https://logos-download.com/wp-content/uploads/2016/10/Hulu_logo.png" alt="" />
@@ -147,7 +147,7 @@ const Search = () => {
               whileTap={{ scale: 0.9 }}
               onClick={()=>{
               <All netflixMovie={disney}/>
-              navigate('/all')
+              navigate('/movies')
               }}
               transition={{duration:0.5,type:'tween'}}
                src="https://th.bing.com/th/id/R.d644467c98dffe7ba15fdc199fbafa59?rik=HTFaMjGepjdFzg&riu=http%3a%2f%2fblog.onsitego.com%2fwp-content%2fuploads%2f2020%2f09%2fDisney-Hotstar-Logo-1024x576.jpg&ehk=qhDA1M4q7l2V4Y8OPaKU8O4dyLp1YoafgY5n6tYx%2fKI%3d&risl=&pid=ImgRaw&r=0" alt="" />
@@ -161,7 +161,7 @@ const Search = () => {
               whileTap={{ scale: 0.9 }}
               onClick={()=>{
               <All netflixMovie={hbo}/>
-              navigate('/all')
+              navigate('/new&popular')
               }}
               transition={{duration:0.5,type:'tween'}}
               src="https://th.bing.com/th/id/OIP.osscav8LjAQE2GON3SDKtAHaDZ?pid=ImgDet&rs=1" alt="" />
@@ -175,7 +175,7 @@ const Search = () => {
               whileTap={{ scale: 0.9 }}
               onClick={()=>{
               <All netflixMovie={apple}/>
-              navigate('/all')
+              navigate('/tvshow')
               }}
               transition={{duration:0.5,type:'tween'}}
               src="https://help.apple.com/assets/5CFFD61D094622FE662CDF38/5CFFD61F094622FE662CDF46/pl_PL/2037468105d76e80b7f29c0b22975c98.png" alt="" />
@@ -189,7 +189,7 @@ const Search = () => {
               whileTap={{ scale: 0.9 }}
               onClick={()=>{
               <All netflixMovie={mubi}/>
-              navigate('/all')
+              navigate('/movies')
               }}
               transition={{duration:0.5,type:'tween'}}
                src="https://servicesdown.com/img/mubi-logo.png" alt="" />

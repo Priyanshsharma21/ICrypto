@@ -10,8 +10,9 @@ import { motion } from 'framer-motion';
 
 
 
-const Banner = () => {
+const Banner = ({banner_type}) => {
     const [movie, setMovie] = useState([]);
+    const [banner, setBanner] = useState(banner)
 
     useEffect(() => {
      const fetchData = async ()=>{
@@ -58,7 +59,7 @@ const Banner = () => {
 
         <div className="banner__buttons">
           <button className="banner__button">Play</button>
-          <Link to='/mylist'><button className='banner__button'> My List</button></Link>
+          <Link to='/search'><button className='banner__button'>Explore More</button></Link>
         </div>
       </div>
       <div className="banner--fadeBottom" />

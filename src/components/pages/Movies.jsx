@@ -16,10 +16,10 @@ const Movies = () => {
       color='red'
       progress={progress}
       />
-      <Banner entertainmentType="" />
+      <Banner entertainmentType={requests.fetchBestOf2022} />
 
-      <Row title="Kid's & Family" fetchUrl={requests.fetchKidsMovie} isLargeRow={true} setProgress={(progress)=>{setProgress(progress)}}/>
-      <Row title="Comedy Movies" fetchUrl={requests.fetchComedyMovies} isLargeRow={true} setProgress={(progress)=>{setProgress(progress)}}/>
+      <Row title="Disney+ Hotstar" fetchUrl={requests.fetchKidsMovie} isLargeRow={true} setProgress={(progress)=>{setProgress(progress)}}/>
+      <Row title="Comedy Movies on MUBI" fetchUrl={requests.fetchComedyMovies} isLargeRow={true} setProgress={(progress)=>{setProgress(progress)}}/>
       <Row title="Best Of RDJ" fetchUrl={requests.fetchBestOfRDJ} isLargeRow={true} setProgress={(progress)=>{setProgress(progress)}}/>
       <Row title="Best Of Zendaya" fetchUrl={requests.fetchBestOfZendaya} isLargeRow={true} setProgress={(progress)=>{setProgress(progress)}}/>
       <Row title="Best Of Dwayne Johnson" fetchUrl={requests.fetchBestOfRock} isLargeRow={true} setProgress={(progress)=>{setProgress(progress)}}/>

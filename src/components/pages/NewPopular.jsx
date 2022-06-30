@@ -16,10 +16,10 @@ const NewPopular = () => {
       color='red'
       progress={progress}
       />
-      <Banner entertainmentType="" />
+      <Banner entertainmentType={requests.fetchTrending} />
 
-      <Row title="New Movies" fetchUrl={requests.fetchBestOf2022} isLargeRow={true} setProgress={(progress)=>{setProgress(progress)}}/>
-      <Row title="New Show's" fetchUrl={requests.fetchTopDrama2022} isLargeRow={true} setProgress={(progress)=>{setProgress(progress)}}/>
+      <Row title="New HULU Movies" fetchUrl={requests.fetchBestOf2022} isLargeRow={true} setProgress={(progress)=>{setProgress(progress)}}/>
+      <Row title="New HBO Show's" fetchUrl={requests.fetchTopDrama2022} isLargeRow={true} setProgress={(progress)=>{setProgress(progress)}}/>
       <Row title="Trending Now" fetchUrl={requests.fetchTrending} isLargeRow={true} setProgress={(progress)=>{setProgress(progress)}}/>
       <Row title="Netflix Orignals" fetchUrl={requests.fetchNetflixOriginals} isLargeRow={true} setProgress={(progress)=>{setProgress(progress)}}/>
       <Row title="Top Rated" fetchUrl={requests.fetchTopRated} isLargeRow={true} setProgress={(progress)=>{setProgress(progress)}}/>

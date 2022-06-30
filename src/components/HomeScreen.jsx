@@ -19,7 +19,7 @@ const HomeScreen = () => {
       color='red'
       progress={progress}
       />
-      <Banner entertainmentType="fetchNetflixOriginals"/>
+      <Banner entertainmentType={requests.fetchNetflixOriginals}/>
 
       <Row title="Treanding Now" fetchUrl={requests.fetchTrending} isLargeRow={true} setProgress={(progress)=>{setProgress(progress)}}/>
       <Row title="Netflix Orignals" fetchUrl={requests.fetchNetflixOriginals} setProgress={(progress)=>{setProgress(progress)}} />
