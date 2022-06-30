@@ -1,0 +1,58 @@
+.search{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background: url('https://prashantji.com/blog/wp-content/uploads/2021/01/OTT-platforms-1024x569.jpg'
+     )center no-repeat;
+    background-size: cover;
+
+}
+.search__gradient{
+    width: 100%;
+    height: 100vh;
+    z-index: 1;
+    background: rgba(0, 0,0, 0.1);
+    background-image: linear-gradient(
+        to top,
+        rgba(0, 0, 0, 0.8) 0,
+        rgba(0, 0, 0, 0) 60%,
+        rgba(0, 0, 0, 0.8) 100%
+      );
+}
+
+::-webkit-scrollbar{
+    display: none;
+}
+
+
+.search__ott{
+    position: absolute;
+    width: 100%;
+    z-index: 1;
+    color: rgb(208, 157, 157);
+    padding: 20px;
+    top: 30%;
+    margin: 0 auto;
+    text-align: center;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.ss{
+    margin: 40px;
+}
+
+.ss > img{
+    width: 120px;
+    height: 110px;
+    border-radius: 10px;
+    border: none;
+    background-color: rgba(192, 192, 192, 0.351);
+}
+
+.prime{
+    background-color: rgba(192, 192, 192, 0.351);
+}

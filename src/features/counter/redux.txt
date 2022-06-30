@@ -1,0 +1,5 @@
+it is like a global store 
+Insteed of having global store we have chunks of stores or slice of tore
+different slice contain c=different info
+like user info 
+basket info
